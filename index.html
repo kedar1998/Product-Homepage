@@ -10,7 +10,7 @@
 <body>
     <!-- NAVBAR -->
 
-    <section id="navbar">
+    <section id="navbar relative ">
 
         <!-- NAV -->
         <nav class="container flex items-center justify-between  mx-auto py-5 px-2">
@@ -34,10 +34,36 @@
             </div>
 
             <!-- HAMBURGER -->
-            <div class="md:hidden">
-                kedar
+            <div class="md:hidden z-20">
+                <button id="menu-btn" class="hamburger">
+                    <div class="hamburger-top"></div>
+                    <div class="hamburger-middle"></div>
+                    <div class="hamburger-bottom"></div>
+                </button>
             </div>
         </nav>
+        <!-- MENU -->
+        <div id="menu" class="hidden z-10  opacity-95  fixed inset-0 bg-orange-500 h-screen flex flex-col items-center space-y-5 pt-20 text-white font-bold text-xl">
+            <div class="border-b w-full text-center py-2">
+                <a href="#" class=" ">Home</a>
+            </div>
+            <div class="border-b w-full text-center py-2">
+                <a href="#" class=" ">Product</a>
+            </div>
+            <div class="border-b w-full text-center py-2">
+                <a href="#" class=" ">Price</a>
+            </div>
+            <div class="border-b w-full text-center py-2">
+                <a href="#" class=" ">About</a>
+            </div>
+            <div class="pt-10 flex space-x-10">
+                <img src="./images/shopping-cart.png" alt="" class="h-6 md:h-7">
+                <img src="./images/search-interface-symbol.png" alt="" class="h-6 md:h-7">
+                <img src="./images/heart.png" alt="" class="h-6 md:h-7">
+                <img src="./images/user.png" alt="" class="h-6 md:h-7">
+            </div>
+            
+        </div>
 
     </section>
 
@@ -89,7 +115,7 @@
                 </div>
 
                 <!-- CONTENT BUTTONS -->
-                <div class="mt-10 md:mt-24 flex flex-col space-y-10 md:space-y-0 md:flex-row items-center md:space-x-20">
+                <div class="mt-10 md:mt-24 flex flex-col space-y-5 md:space-y-0 md:flex-row items-center md:space-x-20">
                     <button class="bg-orange-500 px-8 py-3 rounded-full text-white font-thin text-xl hover:shadow-2xl">Go Shopping</button>
 
                     <button class="bg-orange-500 px-8 py-3 rounded-full text-white font-thin text-xl hover:shadow-2xl">See Catalog</button>
@@ -117,5 +143,10 @@
         </div>
     </section>
 
+
+
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
